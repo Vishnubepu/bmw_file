@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMW bike</title>
-    <link rel="stylesheet" href="bmw.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="bike">
         <nav>
             <img src="img/logo.png" class="logo">
             <a href="#" class="btn">Test Drive</a>
@@ -21,7 +21,35 @@
              only delivery fun in the big-city tumult but also when you are redefinig 
              the city limits when changing corners quickly</P>
             <h3>choose your colour</h3>
+            <div class="colour-select">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
         </div>
     </div>
+    <script>
+        let redBtn =document.getElementById("red")
+        let blueBtn =document.getElementById("blue")
+        let blackBtn =document.getElementById("black")
+        let bike =document.getElementById("bike")
+
+        redBtn.onclick = function(){
+            bike.style.backgroundImage = "url(img/BMW1.png)";
+
+        }
+        blueBtn.onclick = function(){
+            bike.style.backgroundImage = "url(img/BMW2.png)";
+
+        }
+
+        blackBtn.onclick = function(){
+            bike.style.backgroundImage = "url(img/BMW3.png)";
+
+        }
+
+
+
+    </script>
 </body>
 </html>
